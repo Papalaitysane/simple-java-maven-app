@@ -1,6 +1,8 @@
 pipeline {
 
-  agent any
+  agent {
+    label 'docker' 
+  }
 
   environment {
     registry = "docker.io/<user Name>/<image Name>"
